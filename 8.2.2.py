@@ -17,8 +17,10 @@ while n<=d and not flag :
     if m1[a]==x:
         flag=True
     elif m1[a]<x:
+        count += 1
         n=a+1
     else:
+        count += 1
         d=a-1
 if not flag:
     print('There is no item')
